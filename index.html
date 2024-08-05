@@ -32,9 +32,32 @@
             border-radius: 50px;
             padding: 10px 20px;
             font-size: 1.2em;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
         }
-        .alert 
-        {
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: rgb(217, 255, 0);
+        }
+        .btn-custom::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+            transform: translate(-50%, -50%) rotate(45deg);
+            opacity: 0;
+        }
+        .btn-custom:hover::before {
+            opacity: 1;
+            width: 150%;
+            height: 150%;
+        }
+        .alert {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -49,7 +72,6 @@
             padding: 15px;
             margin: 14px 15px;
         }
-        
     </style>
 </head>
 <body>
