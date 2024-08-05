@@ -7,6 +7,9 @@ body {
     font-weight: bolder;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -33,6 +36,12 @@ body {
 .content {
     background-color: #E7EFF5;
     padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .content img {
