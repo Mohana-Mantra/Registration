@@ -2,6 +2,7 @@ body {
     background-color: #e7eef4;
     text-align: center;
     justify-content: center;
+    align-items: center;
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
     margin: 0;
@@ -59,6 +60,8 @@ body {
 .alert {
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     height: auto;
     background-color: rgba(227, 253, 235, 1);
     border-color: rgba(38, 179, 3, 1);
